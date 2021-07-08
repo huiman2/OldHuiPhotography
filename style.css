@@ -33,8 +33,8 @@ body{
 }
 
 .portrait {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    
     box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
                 0.125em 0.125em 0.25em rgba(0,0,0,.15);;
 }
@@ -61,11 +61,15 @@ body{
     flex: 1;
 }
 
-@media(max-width: 600px){
-    .box1,
-    .box-4,
-    .box-5,
-    .box-8 {
+
+
+@media(max-width: 1100px){
+    .portrait {
+        width: 150px;
+    }
+
+    .box-2 p, 
+    .box-7 p{
         display: none;
     }
 }
@@ -73,8 +77,8 @@ body{
 /* Parallax */
 
 .box-9 {
-    padding-top: 18em;
-    padding-bottom: 18em;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
@@ -95,6 +99,18 @@ body{
     color:white;
     font-size: 4rem;
     opacity: 1;
+}
+
+@media(max-width: 992px) {
+    .box-9 h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 600px) {
+    .box-9 h1 {
+        font-size: 30px;
+    }
 }
 
 /* Portfolio */
